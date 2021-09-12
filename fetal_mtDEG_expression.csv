@@ -1,0 +1,10 @@
+﻿Gene Symbol,DESeq2 (BH adjusted p-value ),edgeR (BH adjusted p-value ),ALDEx2 (effect size),Direction of expression,Uniprot ID
+PRDX6,2.00E-04,6.60E-03,,Up,P30041
+AMACR,7.20E-04,7.10E-03,,Down,Q9UHK6
+PDK2,2.50E-05,4.90E-03,,Down,Q15119
+CARKD,1.90E-03,,1.593,Up,Q8IW45
+EFHD1,5.20E-08,2.80E-03,,Up,Q9BUP0
+RDH13,2.60E-10,,1.509,Up,Q8NBN7
+SFXN3,3.90E-10,4.40E-04,1.798,Up,Q9BWM7
+HADH,7.92E-03,,-1.196,Down,P40939
+PC,2.40E-06,3.40E-03,-1.613,Down,P11498
