@@ -1,0 +1,220 @@
+"category","Gene.name","ID","term","count","genes","logFC","adj_pval","zscore"
+"BP","GLRX","GO:0044281","small molecule metabolic process",8,"P35754","Up",9.42e-07,4.76548490765262
+"BP","C3","GO:0032787","monocarboxylic acid metabolic process",6,"P01024","Down",2.84e-07,-5.00179150590991
+"BP","C3","GO:0019752","carboxylic acid metabolic process",6,"P01024","Down",5.04e-06,-4.41545016689638
+"BP","C3","GO:0043436","oxoacid metabolic process",6,"P01024","Down",5.96e-06,-4.37904594819287
+"BP","C3","GO:0006082","organic acid metabolic process",6,"P01024","Down",6.92e-06,-4.34638430180298
+"BP","C3","GO:0044281","small molecule metabolic process",8,"P01024","Down",9.42e-07,-4.76548490765262
+"BP","PGD","GO:0016052","carbohydrate catabolic process",5,"P52209","Down",4.7e-09,-5.74121437780908
+"BP","PGD","GO:0005996","monosaccharide metabolic process",4,"P52209","Down",2.95e-06,-4.52994157381201
+"BP","PGD","GO:0044262","cellular carbohydrate metabolic process",4,"P52209","Down",3.09e-06,-4.52013571795842
+"BP","PGD","GO:0005975","carbohydrate metabolic process",6,"P52209","Down",2.17e-07,-5.05340598346854
+"BP","PGD","GO:0032787","monocarboxylic acid metabolic process",6,"P52209","Down",2.84e-07,-5.00179150590991
+"BP","PGD","GO:0019752","carboxylic acid metabolic process",6,"P52209","Down",5.04e-06,-4.41545016689638
+"BP","PGD","GO:0043436","oxoacid metabolic process",6,"P52209","Down",5.96e-06,-4.37904594819287
+"BP","PGD","GO:0006082","organic acid metabolic process",6,"P52209","Down",6.92e-06,-4.34638430180298
+"BP","PGD","GO:0044281","small molecule metabolic process",8,"P52209","Down",9.42e-07,-4.76548490765262
+"BP","PGD","GO:1901575","organic substance catabolic process",7,"P52209","Down",1.85e-05,-4.12545657125366
+"BP","GLB1","GO:0016052","carbohydrate catabolic process",5,"P16278","Down",4.7e-09,-5.74121437780908
+"BP","GLB1","GO:0005996","monosaccharide metabolic process",4,"P16278","Down",2.95e-06,-4.52994157381201
+"BP","GLB1","GO:0044262","cellular carbohydrate metabolic process",4,"P16278","Down",3.09e-06,-4.52013571795842
+"BP","GLB1","GO:0005975","carbohydrate metabolic process",6,"P16278","Down",2.17e-07,-5.05340598346854
+"BP","GLB1","GO:0044281","small molecule metabolic process",8,"P16278","Down",9.42e-07,-4.76548490765262
+"BP","GLB1","GO:1901575","organic substance catabolic process",7,"P16278","Down",1.85e-05,-4.12545657125366
+"BP","GAPDH","GO:0016052","carbohydrate catabolic process",5,"P04406","Up",4.7e-09,5.74121437780908
+"BP","GAPDH","GO:0005996","monosaccharide metabolic process",4,"P04406","Up",2.95e-06,4.52994157381201
+"BP","GAPDH","GO:0005975","carbohydrate metabolic process",6,"P04406","Up",2.17e-07,5.05340598346854
+"BP","GAPDH","GO:0032787","monocarboxylic acid metabolic process",6,"P04406","Up",2.84e-07,5.00179150590991
+"BP","GAPDH","GO:0019752","carboxylic acid metabolic process",6,"P04406","Up",5.04e-06,4.41545016689638
+"BP","GAPDH","GO:0043436","oxoacid metabolic process",6,"P04406","Up",5.96e-06,4.37904594819287
+"BP","GAPDH","GO:0006082","organic acid metabolic process",6,"P04406","Up",6.92e-06,4.34638430180298
+"BP","GAPDH","GO:0044281","small molecule metabolic process",8,"P04406","Up",9.42e-07,4.76548490765262
+"BP","GAPDH","GO:1901575","organic substance catabolic process",7,"P04406","Up",1.85e-05,4.12545657125366
+"BP","HEXB","GO:0016052","carbohydrate catabolic process",5,"P07686","Up",4.7e-09,5.74121437780908
+"BP","HEXB","GO:0005975","carbohydrate metabolic process",6,"P07686","Up",2.17e-07,5.05340598346854
+"BP","HEXB","GO:1901575","organic substance catabolic process",7,"P07686","Up",1.85e-05,4.12545657125366
+"BP","TPI1","GO:0016052","carbohydrate catabolic process",5,"P60174","Up",4.7e-09,5.74121437780908
+"BP","TPI1","GO:0005996","monosaccharide metabolic process",4,"P60174","Up",2.95e-06,4.52994157381201
+"BP","TPI1","GO:0044262","cellular carbohydrate metabolic process",4,"P60174","Up",3.09e-06,4.52013571795842
+"BP","TPI1","GO:0005975","carbohydrate metabolic process",6,"P60174","Up",2.17e-07,5.05340598346854
+"BP","TPI1","GO:0032787","monocarboxylic acid metabolic process",6,"P60174","Up",2.84e-07,5.00179150590991
+"BP","TPI1","GO:0019752","carboxylic acid metabolic process",6,"P60174","Up",5.04e-06,4.41545016689638
+"BP","TPI1","GO:0043436","oxoacid metabolic process",6,"P60174","Up",5.96e-06,4.37904594819287
+"BP","TPI1","GO:0006082","organic acid metabolic process",6,"P60174","Up",6.92e-06,4.34638430180298
+"BP","TPI1","GO:0044281","small molecule metabolic process",8,"P60174","Up",9.42e-07,4.76548490765262
+"BP","TPI1","GO:1901575","organic substance catabolic process",7,"P60174","Up",1.85e-05,4.12545657125366
+"BP","IDH1","GO:0044262","cellular carbohydrate metabolic process",4,"O75874","Down",3.09e-06,-4.52013571795842
+"BP","IDH1","GO:0005975","carbohydrate metabolic process",6,"O75874","Down",2.17e-07,-5.05340598346854
+"BP","IDH1","GO:0032787","monocarboxylic acid metabolic process",6,"O75874","Down",2.84e-07,-5.00179150590991
+"BP","IDH1","GO:0019752","carboxylic acid metabolic process",6,"O75874","Down",5.04e-06,-4.41545016689638
+"BP","IDH1","GO:0043436","oxoacid metabolic process",6,"O75874","Down",5.96e-06,-4.37904594819287
+"BP","IDH1","GO:0006082","organic acid metabolic process",6,"O75874","Down",6.92e-06,-4.34638430180298
+"BP","IDH1","GO:0044281","small molecule metabolic process",8,"O75874","Down",9.42e-07,-4.76548490765262
+"BP","CTSC","GO:1901575","organic substance catabolic process",7,"P53634","Down",1.85e-05,-4.12545657125366
+"BP","SLC27A2","GO:0032787","monocarboxylic acid metabolic process",6,"O14975","Down",2.84e-07,-5.00179150590991
+"BP","SLC27A2","GO:0019752","carboxylic acid metabolic process",6,"O14975","Down",5.04e-06,-4.41545016689638
+"BP","SLC27A2","GO:0043436","oxoacid metabolic process",6,"O14975","Down",5.96e-06,-4.37904594819287
+"BP","SLC27A2","GO:0006082","organic acid metabolic process",6,"O14975","Down",6.92e-06,-4.34638430180298
+"BP","SLC27A2","GO:0044281","small molecule metabolic process",8,"O14975","Down",9.42e-07,-4.76548490765262
+"BP","SLC27A2","GO:1901575","organic substance catabolic process",7,"O14975","Down",1.85e-05,-4.12545657125366
+"CC","GLRX","GO:0070062","extracellular exosome",11,"P35754","Up",8.08e-10,6.03234231777979
+"CC","GLRX","GO:1903561","extracellular vesicle",11,"P35754","Up",8.95e-10,6.01580041984781
+"CC","GLRX","GO:0043230","extracellular organelle",11,"P35754","Up",9.04e-10,6.01417957785028
+"CC","GLRX","GO:0065010","extracellular membrane-bounded organelle",11,"P35754","Up",9.04e-10,6.01417957785028
+"CC","GLRX","GO:0005615","extracellular space",11,"P35754","Up",1.38e-07,5.13913912507991
+"CC","GLRX","GO:0031982","vesicle",12,"P35754","Up",2.55e-08,5.44778832799356
+"CC","GLRX","GO:0005576","extracellular region",13,"P35754","Up",1.81e-09,5.900682930369
+"CC","C3","GO:0035578","azurophil granule lumen",5,"P01024","Down",2.34e-09,-5.85816838735114
+"CC","C3","GO:0042582","azurophil granule",5,"P01024","Down",3.14e-08,-5.41063972935725
+"CC","C3","GO:0005766","primary lysosome",5,"P01024","Down",3.14e-08,-5.41063972935725
+"CC","C3","GO:0005775","vacuolar lumen",5,"P01024","Down",5.53e-08,-5.30838637183196
+"CC","C3","GO:0034774","secretory granule lumen",6,"P01024","Down",2.38e-08,-5.46005018999551
+"CC","C3","GO:0060205","cytoplasmic vesicle lumen",6,"P01024","Down",2.52e-08,-5.44989347109727
+"CC","C3","GO:0031983","vesicle lumen",6,"P01024","Down",2.61e-08,-5.44364910509506
+"CC","C3","GO:0030141","secretory granule",7,"P01024","Down",3.36e-07,-4.96928568303929
+"CC","C3","GO:0000323","lytic vacuole",5,"P01024","Down",5.59e-05,-3.86344297825696
+"CC","C3","GO:0005764","lysosome",5,"P01024","Down",5.59e-05,-3.86344297825696
+"CC","C3","GO:0099503","secretory vesicle",7,"P01024","Down",1.1e-06,-4.73412695161449
+"CC","C3","GO:0005773","vacuole",5,"P01024","Down",0.000102,-3.71401090152399
+"CC","C3","GO:0070062","extracellular exosome",11,"P01024","Down",8.08e-10,-6.03234231777979
+"CC","C3","GO:1903561","extracellular vesicle",11,"P01024","Down",8.95e-10,-6.01580041984781
+"CC","C3","GO:0043230","extracellular organelle",11,"P01024","Down",9.04e-10,-6.01417957785028
+"CC","C3","GO:0065010","extracellular membrane-bounded organelle",11,"P01024","Down",9.04e-10,-6.01417957785028
+"CC","C3","GO:0005615","extracellular space",11,"P01024","Down",1.38e-07,-5.13913912507991
+"CC","C3","GO:0031982","vesicle",12,"P01024","Down",2.55e-08,-5.44778832799356
+"CC","C3","GO:0005576","extracellular region",13,"P01024","Down",1.81e-09,-5.900682930369
+"CC","C3","GO:0031410","cytoplasmic vesicle",7,"P01024","Down",0.000307,-3.42535348501849
+"CC","C3","GO:0097708","intracellular vesicle",7,"P01024","Down",0.000309,-3.42358904958134
+"CC","PGD","GO:0070062","extracellular exosome",11,"P52209","Down",8.08e-10,-6.03234231777979
+"CC","PGD","GO:1903561","extracellular vesicle",11,"P52209","Down",8.95e-10,-6.01580041984781
+"CC","PGD","GO:0043230","extracellular organelle",11,"P52209","Down",9.04e-10,-6.01417957785028
+"CC","PGD","GO:0065010","extracellular membrane-bounded organelle",11,"P52209","Down",9.04e-10,-6.01417957785028
+"CC","PGD","GO:0005615","extracellular space",11,"P52209","Down",1.38e-07,-5.13913912507991
+"CC","PGD","GO:0031982","vesicle",12,"P52209","Down",2.55e-08,-5.44778832799356
+"CC","PGD","GO:0005576","extracellular region",13,"P52209","Down",1.81e-09,-5.900682930369
+"CC","GLB1","GO:0035578","azurophil granule lumen",5,"P16278","Down",2.34e-09,-5.85816838735114
+"CC","GLB1","GO:0042582","azurophil granule",5,"P16278","Down",3.14e-08,-5.41063972935725
+"CC","GLB1","GO:0005766","primary lysosome",5,"P16278","Down",3.14e-08,-5.41063972935725
+"CC","GLB1","GO:0005775","vacuolar lumen",5,"P16278","Down",5.53e-08,-5.30838637183196
+"CC","GLB1","GO:0034774","secretory granule lumen",6,"P16278","Down",2.38e-08,-5.46005018999551
+"CC","GLB1","GO:0060205","cytoplasmic vesicle lumen",6,"P16278","Down",2.52e-08,-5.44989347109727
+"CC","GLB1","GO:0031983","vesicle lumen",6,"P16278","Down",2.61e-08,-5.44364910509506
+"CC","GLB1","GO:0030141","secretory granule",7,"P16278","Down",3.36e-07,-4.96928568303929
+"CC","GLB1","GO:0000323","lytic vacuole",5,"P16278","Down",5.59e-05,-3.86344297825696
+"CC","GLB1","GO:0005764","lysosome",5,"P16278","Down",5.59e-05,-3.86344297825696
+"CC","GLB1","GO:0099503","secretory vesicle",7,"P16278","Down",1.1e-06,-4.73412695161449
+"CC","GLB1","GO:0005773","vacuole",5,"P16278","Down",0.000102,-3.71401090152399
+"CC","GLB1","GO:0070062","extracellular exosome",11,"P16278","Down",8.08e-10,-6.03234231777979
+"CC","GLB1","GO:1903561","extracellular vesicle",11,"P16278","Down",8.95e-10,-6.01580041984781
+"CC","GLB1","GO:0043230","extracellular organelle",11,"P16278","Down",9.04e-10,-6.01417957785028
+"CC","GLB1","GO:0065010","extracellular membrane-bounded organelle",11,"P16278","Down",9.04e-10,-6.01417957785028
+"CC","GLB1","GO:0005615","extracellular space",11,"P16278","Down",1.38e-07,-5.13913912507991
+"CC","GLB1","GO:0031982","vesicle",12,"P16278","Down",2.55e-08,-5.44778832799356
+"CC","GLB1","GO:0005576","extracellular region",13,"P16278","Down",1.81e-09,-5.900682930369
+"CC","GLB1","GO:0031410","cytoplasmic vesicle",7,"P16278","Down",0.000307,-3.42535348501849
+"CC","GLB1","GO:0097708","intracellular vesicle",7,"P16278","Down",0.000309,-3.42358904958134
+"CC","GFOD2","GO:0005576","extracellular region",13,"Q3B7J2","Up",1.81e-09,5.900682930369
+"CC","GAPDH","GO:0070062","extracellular exosome",11,"P04406","Up",8.08e-10,6.03234231777979
+"CC","GAPDH","GO:1903561","extracellular vesicle",11,"P04406","Up",8.95e-10,6.01580041984781
+"CC","GAPDH","GO:0043230","extracellular organelle",11,"P04406","Up",9.04e-10,6.01417957785028
+"CC","GAPDH","GO:0065010","extracellular membrane-bounded organelle",11,"P04406","Up",9.04e-10,6.01417957785028
+"CC","GAPDH","GO:0005615","extracellular space",11,"P04406","Up",1.38e-07,5.13913912507991
+"CC","GAPDH","GO:0031982","vesicle",12,"P04406","Up",2.55e-08,5.44778832799356
+"CC","GAPDH","GO:0005576","extracellular region",13,"P04406","Up",1.81e-09,5.900682930369
+"CC","HEXB","GO:0035578","azurophil granule lumen",5,"P07686","Up",2.34e-09,5.85816838735114
+"CC","HEXB","GO:0042582","azurophil granule",5,"P07686","Up",3.14e-08,5.41063972935725
+"CC","HEXB","GO:0005766","primary lysosome",5,"P07686","Up",3.14e-08,5.41063972935725
+"CC","HEXB","GO:0005775","vacuolar lumen",5,"P07686","Up",5.53e-08,5.30838637183196
+"CC","HEXB","GO:0034774","secretory granule lumen",6,"P07686","Up",2.38e-08,5.46005018999551
+"CC","HEXB","GO:0060205","cytoplasmic vesicle lumen",6,"P07686","Up",2.52e-08,5.44989347109727
+"CC","HEXB","GO:0031983","vesicle lumen",6,"P07686","Up",2.61e-08,5.44364910509506
+"CC","HEXB","GO:0030141","secretory granule",7,"P07686","Up",3.36e-07,4.96928568303929
+"CC","HEXB","GO:0000323","lytic vacuole",5,"P07686","Up",5.59e-05,3.86344297825696
+"CC","HEXB","GO:0005764","lysosome",5,"P07686","Up",5.59e-05,3.86344297825696
+"CC","HEXB","GO:0099503","secretory vesicle",7,"P07686","Up",1.1e-06,4.73412695161449
+"CC","HEXB","GO:0005773","vacuole",5,"P07686","Up",0.000102,3.71401090152399
+"CC","HEXB","GO:0070062","extracellular exosome",11,"P07686","Up",8.08e-10,6.03234231777979
+"CC","HEXB","GO:1903561","extracellular vesicle",11,"P07686","Up",8.95e-10,6.01580041984781
+"CC","HEXB","GO:0043230","extracellular organelle",11,"P07686","Up",9.04e-10,6.01417957785028
+"CC","HEXB","GO:0065010","extracellular membrane-bounded organelle",11,"P07686","Up",9.04e-10,6.01417957785028
+"CC","HEXB","GO:0005615","extracellular space",11,"P07686","Up",1.38e-07,5.13913912507991
+"CC","HEXB","GO:0031982","vesicle",12,"P07686","Up",2.55e-08,5.44778832799356
+"CC","HEXB","GO:0005576","extracellular region",13,"P07686","Up",1.81e-09,5.900682930369
+"CC","HEXB","GO:0031410","cytoplasmic vesicle",7,"P07686","Up",0.000307,3.42535348501849
+"CC","HEXB","GO:0097708","intracellular vesicle",7,"P07686","Up",0.000309,3.42358904958134
+"CC","TPI1","GO:0070062","extracellular exosome",11,"P60174","Up",8.08e-10,6.03234231777979
+"CC","TPI1","GO:1903561","extracellular vesicle",11,"P60174","Up",8.95e-10,6.01580041984781
+"CC","TPI1","GO:0043230","extracellular organelle",11,"P60174","Up",9.04e-10,6.01417957785028
+"CC","TPI1","GO:0065010","extracellular membrane-bounded organelle",11,"P60174","Up",9.04e-10,6.01417957785028
+"CC","TPI1","GO:0005615","extracellular space",11,"P60174","Up",1.38e-07,5.13913912507991
+"CC","TPI1","GO:0031982","vesicle",12,"P60174","Up",2.55e-08,5.44778832799356
+"CC","TPI1","GO:0005576","extracellular region",13,"P60174","Up",1.81e-09,5.900682930369
+"CC","HMHA1","GO:0035578","azurophil granule lumen",5,"Q92619","Up",2.34e-09,5.85816838735114
+"CC","HMHA1","GO:0042582","azurophil granule",5,"Q92619","Up",3.14e-08,5.41063972935725
+"CC","HMHA1","GO:0005766","primary lysosome",5,"Q92619","Up",3.14e-08,5.41063972935725
+"CC","HMHA1","GO:0005775","vacuolar lumen",5,"Q92619","Up",5.53e-08,5.30838637183196
+"CC","HMHA1","GO:0034774","secretory granule lumen",6,"Q92619","Up",2.38e-08,5.46005018999551
+"CC","HMHA1","GO:0060205","cytoplasmic vesicle lumen",6,"Q92619","Up",2.52e-08,5.44989347109727
+"CC","HMHA1","GO:0031983","vesicle lumen",6,"Q92619","Up",2.61e-08,5.44364910509506
+"CC","HMHA1","GO:0030141","secretory granule",7,"Q92619","Up",3.36e-07,4.96928568303929
+"CC","HMHA1","GO:0000323","lytic vacuole",5,"Q92619","Up",5.59e-05,3.86344297825696
+"CC","HMHA1","GO:0005764","lysosome",5,"Q92619","Up",5.59e-05,3.86344297825696
+"CC","HMHA1","GO:0099503","secretory vesicle",7,"Q92619","Up",1.1e-06,4.73412695161449
+"CC","HMHA1","GO:0005773","vacuole",5,"Q92619","Up",0.000102,3.71401090152399
+"CC","HMHA1","GO:0031982","vesicle",12,"Q92619","Up",2.55e-08,5.44778832799356
+"CC","HMHA1","GO:0005576","extracellular region",13,"Q92619","Up",1.81e-09,5.900682930369
+"CC","HMHA1","GO:0031410","cytoplasmic vesicle",7,"Q92619","Up",0.000307,3.42535348501849
+"CC","HMHA1","GO:0097708","intracellular vesicle",7,"Q92619","Up",0.000309,3.42358904958134
+"CC","IDH1","GO:0034774","secretory granule lumen",6,"O75874","Down",2.38e-08,-5.46005018999551
+"CC","IDH1","GO:0060205","cytoplasmic vesicle lumen",6,"O75874","Down",2.52e-08,-5.44989347109727
+"CC","IDH1","GO:0031983","vesicle lumen",6,"O75874","Down",2.61e-08,-5.44364910509506
+"CC","IDH1","GO:0030141","secretory granule",7,"O75874","Down",3.36e-07,-4.96928568303929
+"CC","IDH1","GO:0099503","secretory vesicle",7,"O75874","Down",1.1e-06,-4.73412695161449
+"CC","IDH1","GO:0070062","extracellular exosome",11,"O75874","Down",8.08e-10,-6.03234231777979
+"CC","IDH1","GO:1903561","extracellular vesicle",11,"O75874","Down",8.95e-10,-6.01580041984781
+"CC","IDH1","GO:0043230","extracellular organelle",11,"O75874","Down",9.04e-10,-6.01417957785028
+"CC","IDH1","GO:0065010","extracellular membrane-bounded organelle",11,"O75874","Down",9.04e-10,-6.01417957785028
+"CC","IDH1","GO:0005615","extracellular space",11,"O75874","Down",1.38e-07,-5.13913912507991
+"CC","IDH1","GO:0031982","vesicle",12,"O75874","Down",2.55e-08,-5.44778832799356
+"CC","IDH1","GO:0005576","extracellular region",13,"O75874","Down",1.81e-09,-5.900682930369
+"CC","IDH1","GO:0031410","cytoplasmic vesicle",7,"O75874","Down",0.000307,-3.42535348501849
+"CC","IDH1","GO:0097708","intracellular vesicle",7,"O75874","Down",0.000309,-3.42358904958134
+"CC","CTSC","GO:0035578","azurophil granule lumen",5,"P53634","Down",2.34e-09,-5.85816838735114
+"CC","CTSC","GO:0042582","azurophil granule",5,"P53634","Down",3.14e-08,-5.41063972935725
+"CC","CTSC","GO:0005766","primary lysosome",5,"P53634","Down",3.14e-08,-5.41063972935725
+"CC","CTSC","GO:0005775","vacuolar lumen",5,"P53634","Down",5.53e-08,-5.30838637183196
+"CC","CTSC","GO:0034774","secretory granule lumen",6,"P53634","Down",2.38e-08,-5.46005018999551
+"CC","CTSC","GO:0060205","cytoplasmic vesicle lumen",6,"P53634","Down",2.52e-08,-5.44989347109727
+"CC","CTSC","GO:0031983","vesicle lumen",6,"P53634","Down",2.61e-08,-5.44364910509506
+"CC","CTSC","GO:0030141","secretory granule",7,"P53634","Down",3.36e-07,-4.96928568303929
+"CC","CTSC","GO:0000323","lytic vacuole",5,"P53634","Down",5.59e-05,-3.86344297825696
+"CC","CTSC","GO:0005764","lysosome",5,"P53634","Down",5.59e-05,-3.86344297825696
+"CC","CTSC","GO:0099503","secretory vesicle",7,"P53634","Down",1.1e-06,-4.73412695161449
+"CC","CTSC","GO:0005773","vacuole",5,"P53634","Down",0.000102,-3.71401090152399
+"CC","CTSC","GO:0070062","extracellular exosome",11,"P53634","Down",8.08e-10,-6.03234231777979
+"CC","CTSC","GO:1903561","extracellular vesicle",11,"P53634","Down",8.95e-10,-6.01580041984781
+"CC","CTSC","GO:0043230","extracellular organelle",11,"P53634","Down",9.04e-10,-6.01417957785028
+"CC","CTSC","GO:0065010","extracellular membrane-bounded organelle",11,"P53634","Down",9.04e-10,-6.01417957785028
+"CC","CTSC","GO:0005615","extracellular space",11,"P53634","Down",1.38e-07,-5.13913912507991
+"CC","CTSC","GO:0031982","vesicle",12,"P53634","Down",2.55e-08,-5.44778832799356
+"CC","CTSC","GO:0005576","extracellular region",13,"P53634","Down",1.81e-09,-5.900682930369
+"CC","CTSC","GO:0031410","cytoplasmic vesicle",7,"P53634","Down",0.000307,-3.42535348501849
+"CC","CTSC","GO:0097708","intracellular vesicle",7,"P53634","Down",0.000309,-3.42358904958134
+"CC","SLC27A2","GO:0030141","secretory granule",7,"O14975","Down",3.36e-07,-4.96928568303929
+"CC","SLC27A2","GO:0099503","secretory vesicle",7,"O14975","Down",1.1e-06,-4.73412695161449
+"CC","SLC27A2","GO:0070062","extracellular exosome",11,"O14975","Down",8.08e-10,-6.03234231777979
+"CC","SLC27A2","GO:1903561","extracellular vesicle",11,"O14975","Down",8.95e-10,-6.01580041984781
+"CC","SLC27A2","GO:0043230","extracellular organelle",11,"O14975","Down",9.04e-10,-6.01417957785028
+"CC","SLC27A2","GO:0065010","extracellular membrane-bounded organelle",11,"O14975","Down",9.04e-10,-6.01417957785028
+"CC","SLC27A2","GO:0005615","extracellular space",11,"O14975","Down",1.38e-07,-5.13913912507991
+"CC","SLC27A2","GO:0031982","vesicle",12,"O14975","Down",2.55e-08,-5.44778832799356
+"CC","SLC27A2","GO:0005576","extracellular region",13,"O14975","Down",1.81e-09,-5.900682930369
+"CC","SLC27A2","GO:0031410","cytoplasmic vesicle",7,"O14975","Down",0.000307,-3.42535348501849
+"CC","SLC27A2","GO:0097708","intracellular vesicle",7,"O14975","Down",0.000309,-3.42358904958134
+"CC","KRT19","GO:0070062","extracellular exosome",11,"P08727","Up",8.08e-10,6.03234231777979
+"CC","KRT19","GO:1903561","extracellular vesicle",11,"P08727","Up",8.95e-10,6.01580041984781
+"CC","KRT19","GO:0043230","extracellular organelle",11,"P08727","Up",9.04e-10,6.01417957785028
+"CC","KRT19","GO:0065010","extracellular membrane-bounded organelle",11,"P08727","Up",9.04e-10,6.01417957785028
+"CC","KRT19","GO:0005615","extracellular space",11,"P08727","Up",1.38e-07,5.13913912507991
+"CC","KRT19","GO:0031982","vesicle",12,"P08727","Up",2.55e-08,5.44778832799356
+"CC","KRT19","GO:0005576","extracellular region",13,"P08727","Up",1.81e-09,5.900682930369

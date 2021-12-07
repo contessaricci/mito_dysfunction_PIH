@@ -1,23 +1,23 @@
 ##############################################################################
-###                     
-### AUTHOR: CONTESSA A. RICCI, PhD ###
-### MANUSCRIPT: DYSREGULATION OF MITOCHONDRIA-MEDIATED MATERNAL-FETAL
-###             INTERACTIONS IN HYPERTENSIVE DISORDERS OF PREGNANCY
-###             DOI:
-### STUDY PURPOSE: Reanalysis of longitudinal maternal RNAseq data from
-###                peripheral blood plasma and endpoint fetal RNAseq data
-###                from placenta at delivery. Goal is to understand
-###                consequences of mitochondrial gene dysregulation by
-###                examining expression patterns of genes the dysregulated
-###                mitochondrial genes are known to interact with
-### DATA: GEO accession GSE154377 (maternal longitudinal data)
-###       GEO accession GSE114691 (fetal placental)
-###       Accessible via NCBI GEO datasets
-###
-### NOTES: All scripts assumes all data has been compiled and is in correct
-###        format. This script utilizes some files that have been compiled
-###        either manually, in Python, or in R (or a combination thereof).
-###
+###                     												   ###
+### AUTHOR: CONTESSA A. RICCI, PhD 										   ###
+### MANUSCRIPT: DYSREGULATION OF MITOCHONDRIA-MEDIATED MATERNAL-FETAL	   ###
+###             INTERACTIONS IN HYPERTENSIVE DISORDERS OF PREGNANCY		   ###
+###             DOI: (TBD)												   ###
+### STUDY PURPOSE: Reanalysis of longitudinal maternal RNAseq data from    ###
+###                peripheral blood plasma and endpoint fetal RNAseq data  ###
+###                from placenta at delivery. Goal is to understand        ###
+###                consequences of mitochondrial gene dysregulation by     ###
+###                examining expression patterns of genes the dysregulated ###
+###                mitochondrial genes are known to interact with		   ###
+### DATA: GEO accession GSE154377 (maternal longitudinal data)			   ###
+###       GEO accession GSE114691 (fetal placental)						   ###
+###       Accessible via NCBI GEO datasets								   ###
+###                     												   ###
+### NOTES: All scripts assume all data has been compiled and is in correct ###
+###        format. This script utilizes some files that have been compiled ###
+###        either manually, in Python, or in R (or a combination thereof). ###
+###                     												   ###
 ##############################################################################
 
 # PURPOSE OF SCRIPT: 1) IDENTIFY mtDEGs FROM MATERNAL DEG FILES AND FETAL GENE LIST PROVIDED BY AUTHORS
@@ -85,7 +85,7 @@ fetal_DEGs = open("fetal_DEGs.csv", "r").read().split("\r\n")
 MitoCarta_dict = {"Esemble_IDs":[], "Uniprot_IDs":[]}
 maternal_dict = {"T1":[], "T2":[], "T3":[], "del":[]}
 fetal_dict = {}
- 
+
 ## POPULATE MITOCARTA DICTIONARY ##
 for entry in MitoCarta[1:]:
 	if len(entry.split("\t")[14]) > 1 and entry.split("\t")[14] not in MitoCarta_dict["Esemble_IDs"]:
@@ -94,6 +94,9 @@ for entry in MitoCarta[1:]:
 	if len(entry.split("\t")[15]) > 1 and entry.split("\t")[15] not in MitoCarta_dict["Uniprot_IDs"]:
 		MitoCarta_dict["Uniprot_IDs"].append(entry.split("\t")[15])
 
+print(MitoCarta_dict)
+'''
+'''
 ## POPULATE MATERNAL DICTIONARY ##
 for entry in T1_DEGs[1:]:
 	if entry.split(",")[0] in MitoCarta_dict["Esemble_IDs"] and entry.split(",")[0] not in maternal_dict["T1"]:
@@ -202,7 +205,7 @@ for ID in maternal_gest:
 	maternal_gest_DEGs.write(ID + "\n")
 
 ## MATERNAL ALL GENES FOR ENSEMBL BIOMART SEARCHING (for making GMT files) ##
-maternal_all_genes = open("T1_Contr.csv", "r").read().split("\n")
+maternal_all_genes = open("T1_Contr.csv", "r").read().replace("\"","").split("\n")
 maternal_all_geneIDs = []
 for line in maternal_all_genes:
 	if len(line) > 1 and line.split(",")[0] not in maternal_all_geneIDs:
@@ -220,6 +223,3 @@ for ID in maternal_del:
 fetal_del_DEGs = open("fetal_del_DEGs.txt", "w")
 for ID in fetal_del:
 	fetal_del_DEGs.write(ID + "\n")
-
-
-

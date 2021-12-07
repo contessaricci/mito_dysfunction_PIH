@@ -1,26 +1,41 @@
 ##############################################################################
-###                     
-### AUTHOR: CONTESSA A. RICCI, PhD ###
-### MANUSCRIPT: DYSREGULATION OF MITOCHONDRIA-MEDIATED MATERNAL-FETAL
-###             INTERACTIONS IN HYPERTENSIVE DISORDERS OF PREGNANCY
-###             DOI:
-### STUDY PURPOSE: Reanalysis of longitudinal maternal RNAseq data from
-###                peripheral blood plasma and endpoint fetal RNAseq data
-###                from placenta at delivery. Goal is to understand
-###                consequences of mitochondrial gene dysregulation by
-###                examining expression patterns of genes the dysregulated
-###                mitochondrial genes are known to interact with
-### DATA: GEO accession GSE154377 (maternal longitudinal data)
-###       GEO accession GSE114691 (fetal placental)
-###       Accessible via NCBI GEO datasets
-###
-### NOTES: Script assumes all data has been compiled and is in correct
-###        format. This script utilizes some files that have been compiled
-###        via Python.
-###
+###                                                                        ###
+### AUTHOR: CONTESSA A. RICCI, PhD                                         ###
+### MANUSCRIPT: DYSREGULATION OF MITOCHONDRIA-MEDIATED MATERNAL-FETAL      ###
+###             INTERACTIONS IN HYPERTENSIVE DISORDERS OF PREGNANCY        ###
+###             DOI: (TBD)                                                 ###
+### STUDY PURPOSE: Reanalysis of longitudinal maternal RNAseq data from    ###
+###                peripheral blood plasma and endpoint fetal RNAseq data  ###
+###                from placenta at delivery. Goal is to understand        ###
+###                consequences of mitochondrial gene dysregulation by     ###
+###                examining expression patterns of genes the dysregulated ###
+###                mitochondrial genes are known to interact with          ###
+### DATA: GEO accession GSE154377 (maternal longitudinal data)             ###
+###       GEO accession GSE114691 (fetal placental)                        ###
+###       Accessible via NCBI GEO datasets                                 ###
+###                                                                        ###
+### NOTES: Script assumes all data has been compiled and is in correct     ###
+###        format. This script utilizes some files that have been compiled ###
+###        via Python.                                                     ###
+###                                                                        ###
 ##############################################################################
 
+###############################################
+###                                         ###
+###       EFFECT SIZE MUTATIONAL LOAD       ###
+###                                         ###
+###############################################
+# RUN EFFECT SIZE USING COHEN'S D
+# OUTLIER REMOVAL AND T-TEST CARRIED OUT IN GRAPH PRISM
 
+install.packages("effsize")
+library(effsize)
+mutational_loads <- read.csv("Mutational_load_outliersrm.csv")
+cohen.d(mutational_loads$Mutations, mutational_loads$Treatment)
+#d estimate: -0.5997953 (medium)
+#95 percent confidence interval:
+#  lower      upper 
+#-1.4936515  0.2940609 
 
 ############################################################################
 ###                                                                      ###
@@ -35,12 +50,12 @@
 # CORRELATION MATRIX FOR MATERNAL PATIENT CHARACTERISTICS TO DETERMINE
 #     AUTOCORRELATION AMONG COVARIATES (**FOR DESEQ2 MODEL LATER**)
 
-covars <- read.csv("del_vecchio_covars.csv", row.names = 1)
+covars <- read.csv("maternal_covariates.csv", row.names = 1)
 
 library("car")
 qqPlot(covars$Age)
 qqPlot(covars$BMI)
-qqPlot(covars$Baby_weight_g) #not normal
+qqPlot(covars$Baby_weight_g)
 qqPlot(covars$Baby_length_cm) #not normal
 qqPlot(covars$Placental_weight_g)
 qqPlot(covars$Delivery)
@@ -51,6 +66,7 @@ names(covars)[names(covars) == "Baby_head_circumference_cm"] <- "Head circ"
 names(covars)[names(covars) == "Placental_weight_g"] <- "Placenta wt"
 
 library(corrplot)
+library(Hmisc)
 corr_matrix <- rcorr(as.matrix(covars[,c(3,4,6,7,8,9,10)]), type = "spearman")
 corrplot(corr_matrix$r, type="upper", order="hclust", 
          p.mat = corr_matrix$P, sig.level = 0.05, insig = "blank")
@@ -79,7 +95,7 @@ corrplot(corr_matrix$r, type="upper", order="hclust",
 #no correlation present
 
 # WRITE NEW FILE
-write.csv(covars, "del_vecchio_covars.csv", row.names = TRUE)
+write.csv(covars, "maternal_covariates_autocorr_rm.csv", row.names = TRUE)
 
 
 ##################################################
@@ -87,7 +103,7 @@ write.csv(covars, "del_vecchio_covars.csv", row.names = TRUE)
 ##################################################
 install.packages("ggfortify")
 library(ggfortify)
-counts_raw <- read.csv("all_subjects.csv", row.names="Transcripts")
+counts_raw <- read.csv("maternal_gestation_raw_counts.csv", row.names="Transcripts")
 
 # SEPARATE GESTATION AND DELIVERY
 # REMOVE SAMPLE NT1 (DOES NOT HAVE 1ST TRIMESTER COLLECTION + TCGSA REQUIRES BALANCED, FULL DATA)
@@ -132,7 +148,7 @@ qplot(PCs[, 1], PCs[, 2], color = I(col), size = I(2))
 ###             be used as covariates for DEseq models             ###
 ######################################################################
 
-metafile <- read.csv("del_vecchio_metafile.csv", row.names = 1)
+metafile <- read.csv("maternal_DESeq_metafile.csv", row.names = 1)
 
 # SEPARATE GESTATION AND DELIVERY
 dim_df <- as.data.frame(dim(metafile))
@@ -159,7 +175,6 @@ fviz_eig(pca_T3) #PC 1 explains ~ 80% variation for T3
 #   DELIVERY
 pca_DEL <- prcomp(DEL, scale = TRUE)
 fviz_eig(pca_DEL) #PC 1 explains > 80% variation for delivery
-
 
 # BIND PC1 LOADINGS FROM GENE EXPRESSION PCA TO EACH COVARIATE TIMEPOINT DATAFRAME
 #   TRIMESTER 1
@@ -299,65 +314,47 @@ write.csv(del_sigContr, "T1_sigContr.csv") #only significant DEGs; rename as nec
 
 ##########################################################################
 ###                                                                    ###
-###                   CONDUCT DESEQ ON ALL GESTATION                   ###
+###                   NORMALIZE ALL GESTATION BY CPM                   ###
 ###                           * MATERNAL ONLY *                        ###
 ###                                                                    ###
-### CONTRAST OF INTEREST:                                              ###
-###     NT v PE all gestation                                          ###
 ###                                                                    ###
 ### PURPOSE:                                                           ###
-###     Get normalized counts across entire gestation for TcGSA        ###
+###     Total count normalization across entire gestation for TcGSA    ###
 ###                                                                    ###
 ########################################################################## 
 
-# ALL GESTATION METAFILE: covars_gest
 # ALL GESTATION COUNTS: gest_counts_raw
 
-# CONFIRM PC1 EXPLAINS ADEQUATE AMOUNT OF VARIATION
-pca_gest <- prcomp(gest_counts_raw, scale = TRUE)
-fviz_eig(pca_gest) #PC 1 explains ~ 80% variation for all gestation
+# CONFIRM LIBRARY SIZES NEED TO BE CONTROLLED FOR
+lib_sizes = as.data.frame(seq(1,length(gest_counts_raw)))
+colnames(lib_sizes) <- "col_num"
+lib_sizes$libsize = 0
+for(i in seq(1,length(gest_counts_raw), by = 1)){
+  lib_sizes[i,2] = sum(gest_counts_raw[,i])
+}
+# plot distribution of library sizes
+ggplot(data = lib_sizes, aes(x=col_num, y=libsize)) + 
+  geom_bar(stat="identity")
 
-# BIND PC1 LOADINGS FROM GENE EXPRESSION PCA TO ALL GESTATION DATAFRAME
-cbind(rownames(covars_gest), rownames(pca_gest$rotation)) #confirm samples are in correct order
-covars_gest$loadings_gest <- as.data.frame(pca_gest$rotation)$PC1
+# CORRECT FOR LIBRARY SIZE BY CPM
+gest_CPM <- gest_counts_raw
+for(i in seq(1,length(gest_CPM), by = 1)){
+  gest_CPM[,i] = gest_CPM[,i]/(sum(gest_CPM[,i])/1000000)
+}
 
-# CONDUCT LINEAR MODELS TO DETERMINE INFLUENCE OF COVARIATES ON GENE EXPRESSION PROFILES
-#   (note: replace interaction term with covariate of interest)
-#   (note: asteriks [*] next to covariate indicates inclusion in DESeq model)
-summary(lm(loadings_gest ~ ageBMI_eigen * Condition, data = covars_gest))
-# Delivery_mode *
-# Fetal_sex
-# T1_collect
-# T2_collect
-# T3_collect
-# Delivery_wks
-# utero_eigen
-# ageBMI_eigen
+# CONFIRM LIBRARY SIZES ARE CONSISTENT ACROSS SAMPLES
+lib_sizes = as.data.frame(seq(1,length(gest_CPM)))
+colnames(lib_sizes) <- "col_num"
+lib_sizes$libsize = 0
+for(i in seq(1,length(gest_CPM), by = 1)){
+  lib_sizes[i,2] = sum(gest_CPM[,i])
+}
+# plot distribution of normalized library sizes
+ggplot(data = lib_sizes, aes(x=col_num, y=libsize)) + 
+  geom_bar(stat="identity")
 
-# RUN DESEQ
-#   (note: countData is count file [gest_counts_raw];
-#          colData is corresponding metafile [covars_gest])
-#   (note: unremark covariates to include them in the DESeq model)
-dds <- DESeqDataSetFromMatrix(countData = gest_counts_raw, colData = covars_gest, design = ~Condition +
-                                Delivery_mode# +
-                                #Fetal_sex +
-                                #T1_collect +
-                                #T2_collect +
-                                #T3_collect +
-                                #Delivery_wks +
-                                #utero_eigen +
-                                #ageBMI_eigen
-                                )
-dds <- DESeq(dds) #run DESeq
-
-# WRITE DESEQ FILES - WILL USE:
-#                         - RLOG NORMALIZED COUNTS FOR ALL GESTATION [TCGSA]
-
-#rlog normalize and write respective expression data (all gestation and only delivery)
-rld <- rlog(dds)
-rrld <- assay(rld)
-write.csv(rrld, file ="maternal_gestation_rlog_normalized_counts.csv") #rename as necessary
-
+# WRITE NORMALIZED COUNTS FILE
+write.csv(gest_CPM, "maternal_gestation_normalized_counts_TcGSA.csv")
 
 
 #################################################################
@@ -383,11 +380,13 @@ write.csv(rrld, file ="maternal_gestation_rlog_normalized_counts.csv") #rename a
 
 #################################################################
 ###                                                           ###
-### RUN TCGSA ON RLOG NORMALIZED GESTATION COUNTS AND GMT
-### FILE MADE USING PYTHON SCRIPTS
+###   RUN TCGSA ON NORMALIZED GESTATION COUNTS AND GMT FILE   ###
+###               MADE USING PYTHON SCRIPTS                   ###
 ###                                                           ###
 #################################################################
 
+# note: outliers have already been identified and removed
+# note: NT1 samples are removed due to incomplete sampling (not sampled during 1st trimester)
 BiocManager::install("multtest")
 library(GSA)
 require(TcGSA)
@@ -399,23 +398,17 @@ gmt_file <- GSA.read.gmt("gestation_GMT.txt")
 head(gmt_file) #make sure was imported in the correct format
 
 # READ IN NORMALIZED EXPRESSION DATA
-gestation_expr <- read.csv("maternal_gestation_rlog_normalized_counts.csv", row.names = 1)
+gestation_expr <- read.csv("maternal_gestation_normalized_counts_TcGSA.csv", row.names = 1)
 
 # READ IN EXPERIMENTAL DESIGN DATA
 exp_design <- read.csv("TcGSA_experimental_design.csv")
-exp_design <- as.data.frame(subset(exp_design[-c(1:3),], Collection != "4")) #remove delivery collections and sample NT1 (NT1 is removed because of incomplete sampling)
-
-cbind(colnames(gestation_expr), gestation_expr$Subject_ID) #ensure sample order of expression matrix match sample order of experimental design
-exp_design$Subject_ID <- colnames(gestation_expr) #ensure sample names of expression matrix match sample names of experimental design
 
 # RUN TcGSA USING DEFAULT PARAMETERS
 tcgsa_result <- TcGSA.LR(expr = gestation_expr, 
                          gmt = gmt_file, 
                          design = exp_design,
                          subject_name = "Subject_no", 
-                         time_name = "Collection",
-                         time_func = "linear", 
-                         crossedRandom=FALSE)
+                         time_name = "Collection")
 
 summary(tcgsa_result) #view results summary
 TcGSA::signifLRT.TcGSA(tcgsa_result)$mixedLRTadjRes #view significant gene sets
@@ -442,3 +435,58 @@ plot(x = tcgsa_result, expr = tcgsa_result$Estimations,
      time_unit = "Collection ",
      subtitle = "Normotensive v PE/HTN", cex.label.row = 1, cex.label.col = 0.7, cex.main = 0.7,
      heatmap.width = 0.5, dendrogram.size = 0.1, heatKey.size = 0.5,margins = c(4,6))
+
+#######################################################
+###                                                 ###
+###     MAKE GO PLOTS USING DATAFRAMES MADE BY      ###
+###           make_GOplots_dataframes.py            ###
+###                                                 ###
+### PURPOSE: REDUCE TERMS IN GO ENRICHMENTS FOR     ###
+###          EFFECTIVE VISUALIZATION                ###
+###                                                 ###
+#######################################################
+
+install.packages("GOplot")
+library(GOplot)
+
+maternal_GOdata <- read.csv("maternal_delivery_GOplot_data.csv")
+fetal_GOdata <- read.csv("fetal_delivery_GOplot_data.csv")
+head(maternal_GOdata)
+head(fetal_GOdata)
+
+# calculate z-score with directionality
+maternal_GOdata$zscore <- ifelse(maternal_GOdata$logFC < 0, qnorm(maternal_GOdata$adj_pval, lower.tail = T),qnorm(maternal_GOdata$adj_pval, lower.tail = F))
+fetal_GOdata$zscore <- ifelse(fetal_GOdata$logFC == "Down", qnorm(fetal_GOdata$adj_pval, lower.tail = T),qnorm(fetal_GOdata$adj_pval, lower.tail = F))
+#write.csv(maternal_GOdata,"maternal_delivery_GOplot_data_zscore.csv", row.names = F) #uncomment to write dataframe with zscores
+#write.csv(fetal_GOdata,"fetal_delivery_GOplot_data_zscore.csv", row.names = F) #uncomment to write dataframe with zscores
+
+# collapse terms based on 99% similarity of shared genes
+maternalBP_reduced <- reduce_overlap(subset(maternal_GOdata[,c(1,3:9)], category == "BP"), overlap = 0.99)
+maternalCC_reduced <- reduce_overlap(subset(maternal_GOdata[,c(1,3:9)], category == "CC"), overlap = 0.99)
+fetalBP_reduced <- reduce_overlap(subset(fetal_GOdata[,c(1,3:9)], category == "BP"), overlap = 0.99)
+fetalCC_reduced <- reduce_overlap(subset(fetal_GOdata[,c(1,3:9)], category == "CC"), overlap = 0.99)
+
+# make dataframes for plotting
+maternalBP_reduced$Individual <- "Maternal"
+maternalCC_reduced$Individual <- "Maternal"
+fetalBP_reduced$Individual <- "Fetal"
+fetalCC_reduced$Individual <- "Fetal"
+
+both_BP <- rbind(maternalBP_reduced, fetalBP_reduced)
+both_CC <- rbind(maternalCC_reduced, fetalCC_reduced)
+
+BP_plot <- both_BP %>%
+  ggplot( aes(x=Individual, y=term, size = count, color=zscore)) +
+  scale_colour_gradient(low = "cyan4", high = "chocolate1") + 
+  theme_minimal()+theme(axis.title.x=element_blank(),
+                        axis.title.y=element_blank())+
+  geom_point(alpha=0.8)+
+  scale_size(range = c(0.1, 10), name="count") + ylab("")
+
+CC_plot <- both_CC %>%
+  ggplot( aes(x=Individual, y=term, size = count, color=zscore)) +
+  scale_colour_gradient(low = "cyan4", high = "chocolate1") + 
+  theme_minimal()+theme(axis.title.x=element_blank(),
+                        axis.title.y=element_blank())+
+  geom_point(alpha=0.8)+
+  scale_size(range = c(0.1, 10), name="count") + ylab("")

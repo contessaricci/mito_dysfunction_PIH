@@ -1,0 +1,220 @@
+category,Gene name,ID,term,count,genes,logFC,adj_pval
+BP,GLRX,GO:0044281,small molecule metabolic process,8,P35754,Up,9.42E-07
+BP,C3,GO:0032787,monocarboxylic acid metabolic process,6,P01024,Down,2.84E-07
+BP,C3,GO:0019752,carboxylic acid metabolic process,6,P01024,Down,5.04E-06
+BP,C3,GO:0043436,oxoacid metabolic process,6,P01024,Down,5.96E-06
+BP,C3,GO:0006082,organic acid metabolic process,6,P01024,Down,6.92E-06
+BP,C3,GO:0044281,small molecule metabolic process,8,P01024,Down,9.42E-07
+BP,PGD,GO:0016052,carbohydrate catabolic process,5,P52209,Down,4.70E-09
+BP,PGD,GO:0005996,monosaccharide metabolic process,4,P52209,Down,2.95E-06
+BP,PGD,GO:0044262,cellular carbohydrate metabolic process,4,P52209,Down,3.09E-06
+BP,PGD,GO:0005975,carbohydrate metabolic process,6,P52209,Down,2.17E-07
+BP,PGD,GO:0032787,monocarboxylic acid metabolic process,6,P52209,Down,2.84E-07
+BP,PGD,GO:0019752,carboxylic acid metabolic process,6,P52209,Down,5.04E-06
+BP,PGD,GO:0043436,oxoacid metabolic process,6,P52209,Down,5.96E-06
+BP,PGD,GO:0006082,organic acid metabolic process,6,P52209,Down,6.92E-06
+BP,PGD,GO:0044281,small molecule metabolic process,8,P52209,Down,9.42E-07
+BP,PGD,GO:1901575,organic substance catabolic process,7,P52209,Down,1.85E-05
+BP,GLB1,GO:0016052,carbohydrate catabolic process,5,P16278,Down,4.70E-09
+BP,GLB1,GO:0005996,monosaccharide metabolic process,4,P16278,Down,2.95E-06
+BP,GLB1,GO:0044262,cellular carbohydrate metabolic process,4,P16278,Down,3.09E-06
+BP,GLB1,GO:0005975,carbohydrate metabolic process,6,P16278,Down,2.17E-07
+BP,GLB1,GO:0044281,small molecule metabolic process,8,P16278,Down,9.42E-07
+BP,GLB1,GO:1901575,organic substance catabolic process,7,P16278,Down,1.85E-05
+BP,GAPDH,GO:0016052,carbohydrate catabolic process,5,P04406,Up,4.70E-09
+BP,GAPDH,GO:0005996,monosaccharide metabolic process,4,P04406,Up,2.95E-06
+BP,GAPDH,GO:0005975,carbohydrate metabolic process,6,P04406,Up,2.17E-07
+BP,GAPDH,GO:0032787,monocarboxylic acid metabolic process,6,P04406,Up,2.84E-07
+BP,GAPDH,GO:0019752,carboxylic acid metabolic process,6,P04406,Up,5.04E-06
+BP,GAPDH,GO:0043436,oxoacid metabolic process,6,P04406,Up,5.96E-06
+BP,GAPDH,GO:0006082,organic acid metabolic process,6,P04406,Up,6.92E-06
+BP,GAPDH,GO:0044281,small molecule metabolic process,8,P04406,Up,9.42E-07
+BP,GAPDH,GO:1901575,organic substance catabolic process,7,P04406,Up,1.85E-05
+BP,HEXB,GO:0016052,carbohydrate catabolic process,5,P07686,Up,4.70E-09
+BP,HEXB,GO:0005975,carbohydrate metabolic process,6,P07686,Up,2.17E-07
+BP,HEXB,GO:1901575,organic substance catabolic process,7,P07686,Up,1.85E-05
+BP,TPI1,GO:0016052,carbohydrate catabolic process,5,P60174,Up,4.70E-09
+BP,TPI1,GO:0005996,monosaccharide metabolic process,4,P60174,Up,2.95E-06
+BP,TPI1,GO:0044262,cellular carbohydrate metabolic process,4,P60174,Up,3.09E-06
+BP,TPI1,GO:0005975,carbohydrate metabolic process,6,P60174,Up,2.17E-07
+BP,TPI1,GO:0032787,monocarboxylic acid metabolic process,6,P60174,Up,2.84E-07
+BP,TPI1,GO:0019752,carboxylic acid metabolic process,6,P60174,Up,5.04E-06
+BP,TPI1,GO:0043436,oxoacid metabolic process,6,P60174,Up,5.96E-06
+BP,TPI1,GO:0006082,organic acid metabolic process,6,P60174,Up,6.92E-06
+BP,TPI1,GO:0044281,small molecule metabolic process,8,P60174,Up,9.42E-07
+BP,TPI1,GO:1901575,organic substance catabolic process,7,P60174,Up,1.85E-05
+BP,IDH1,GO:0044262,cellular carbohydrate metabolic process,4,O75874,Down,3.09E-06
+BP,IDH1,GO:0005975,carbohydrate metabolic process,6,O75874,Down,2.17E-07
+BP,IDH1,GO:0032787,monocarboxylic acid metabolic process,6,O75874,Down,2.84E-07
+BP,IDH1,GO:0019752,carboxylic acid metabolic process,6,O75874,Down,5.04E-06
+BP,IDH1,GO:0043436,oxoacid metabolic process,6,O75874,Down,5.96E-06
+BP,IDH1,GO:0006082,organic acid metabolic process,6,O75874,Down,6.92E-06
+BP,IDH1,GO:0044281,small molecule metabolic process,8,O75874,Down,9.42E-07
+BP,CTSC,GO:1901575,organic substance catabolic process,7,P53634,Down,1.85E-05
+BP,SLC27A2,GO:0032787,monocarboxylic acid metabolic process,6,O14975,Down,2.84E-07
+BP,SLC27A2,GO:0019752,carboxylic acid metabolic process,6,O14975,Down,5.04E-06
+BP,SLC27A2,GO:0043436,oxoacid metabolic process,6,O14975,Down,5.96E-06
+BP,SLC27A2,GO:0006082,organic acid metabolic process,6,O14975,Down,6.92E-06
+BP,SLC27A2,GO:0044281,small molecule metabolic process,8,O14975,Down,9.42E-07
+BP,SLC27A2,GO:1901575,organic substance catabolic process,7,O14975,Down,1.85E-05
+CC,GLRX,GO:0070062,extracellular exosome,11,P35754,Up,8.08E-10
+CC,GLRX,GO:1903561,extracellular vesicle,11,P35754,Up,8.95E-10
+CC,GLRX,GO:0043230,extracellular organelle,11,P35754,Up,9.04E-10
+CC,GLRX,GO:0065010,extracellular membrane-bounded organelle,11,P35754,Up,9.04E-10
+CC,GLRX,GO:0005615,extracellular space,11,P35754,Up,1.38E-07
+CC,GLRX,GO:0031982,vesicle,12,P35754,Up,2.55E-08
+CC,GLRX,GO:0005576,extracellular region,13,P35754,Up,1.81E-09
+CC,C3,GO:0035578,azurophil granule lumen,5,P01024,Down,2.34E-09
+CC,C3,GO:0042582,azurophil granule,5,P01024,Down,3.14E-08
+CC,C3,GO:0005766,primary lysosome,5,P01024,Down,3.14E-08
+CC,C3,GO:0005775,vacuolar lumen,5,P01024,Down,5.53E-08
+CC,C3,GO:0034774,secretory granule lumen,6,P01024,Down,2.38E-08
+CC,C3,GO:0060205,cytoplasmic vesicle lumen,6,P01024,Down,2.52E-08
+CC,C3,GO:0031983,vesicle lumen,6,P01024,Down,2.61E-08
+CC,C3,GO:0030141,secretory granule,7,P01024,Down,3.36E-07
+CC,C3,GO:0000323,lytic vacuole,5,P01024,Down,5.59E-05
+CC,C3,GO:0005764,lysosome,5,P01024,Down,5.59E-05
+CC,C3,GO:0099503,secretory vesicle,7,P01024,Down,1.10E-06
+CC,C3,GO:0005773,vacuole,5,P01024,Down,1.02E-04
+CC,C3,GO:0070062,extracellular exosome,11,P01024,Down,8.08E-10
+CC,C3,GO:1903561,extracellular vesicle,11,P01024,Down,8.95E-10
+CC,C3,GO:0043230,extracellular organelle,11,P01024,Down,9.04E-10
+CC,C3,GO:0065010,extracellular membrane-bounded organelle,11,P01024,Down,9.04E-10
+CC,C3,GO:0005615,extracellular space,11,P01024,Down,1.38E-07
+CC,C3,GO:0031982,vesicle,12,P01024,Down,2.55E-08
+CC,C3,GO:0005576,extracellular region,13,P01024,Down,1.81E-09
+CC,C3,GO:0031410,cytoplasmic vesicle,7,P01024,Down,3.07E-04
+CC,C3,GO:0097708,intracellular vesicle,7,P01024,Down,3.09E-04
+CC,PGD,GO:0070062,extracellular exosome,11,P52209,Down,8.08E-10
+CC,PGD,GO:1903561,extracellular vesicle,11,P52209,Down,8.95E-10
+CC,PGD,GO:0043230,extracellular organelle,11,P52209,Down,9.04E-10
+CC,PGD,GO:0065010,extracellular membrane-bounded organelle,11,P52209,Down,9.04E-10
+CC,PGD,GO:0005615,extracellular space,11,P52209,Down,1.38E-07
+CC,PGD,GO:0031982,vesicle,12,P52209,Down,2.55E-08
+CC,PGD,GO:0005576,extracellular region,13,P52209,Down,1.81E-09
+CC,GLB1,GO:0035578,azurophil granule lumen,5,P16278,Down,2.34E-09
+CC,GLB1,GO:0042582,azurophil granule,5,P16278,Down,3.14E-08
+CC,GLB1,GO:0005766,primary lysosome,5,P16278,Down,3.14E-08
+CC,GLB1,GO:0005775,vacuolar lumen,5,P16278,Down,5.53E-08
+CC,GLB1,GO:0034774,secretory granule lumen,6,P16278,Down,2.38E-08
+CC,GLB1,GO:0060205,cytoplasmic vesicle lumen,6,P16278,Down,2.52E-08
+CC,GLB1,GO:0031983,vesicle lumen,6,P16278,Down,2.61E-08
+CC,GLB1,GO:0030141,secretory granule,7,P16278,Down,3.36E-07
+CC,GLB1,GO:0000323,lytic vacuole,5,P16278,Down,5.59E-05
+CC,GLB1,GO:0005764,lysosome,5,P16278,Down,5.59E-05
+CC,GLB1,GO:0099503,secretory vesicle,7,P16278,Down,1.10E-06
+CC,GLB1,GO:0005773,vacuole,5,P16278,Down,1.02E-04
+CC,GLB1,GO:0070062,extracellular exosome,11,P16278,Down,8.08E-10
+CC,GLB1,GO:1903561,extracellular vesicle,11,P16278,Down,8.95E-10
+CC,GLB1,GO:0043230,extracellular organelle,11,P16278,Down,9.04E-10
+CC,GLB1,GO:0065010,extracellular membrane-bounded organelle,11,P16278,Down,9.04E-10
+CC,GLB1,GO:0005615,extracellular space,11,P16278,Down,1.38E-07
+CC,GLB1,GO:0031982,vesicle,12,P16278,Down,2.55E-08
+CC,GLB1,GO:0005576,extracellular region,13,P16278,Down,1.81E-09
+CC,GLB1,GO:0031410,cytoplasmic vesicle,7,P16278,Down,3.07E-04
+CC,GLB1,GO:0097708,intracellular vesicle,7,P16278,Down,3.09E-04
+CC,GFOD2,GO:0005576,extracellular region,13,Q3B7J2,Up,1.81E-09
+CC,GAPDH,GO:0070062,extracellular exosome,11,P04406,Up,8.08E-10
+CC,GAPDH,GO:1903561,extracellular vesicle,11,P04406,Up,8.95E-10
+CC,GAPDH,GO:0043230,extracellular organelle,11,P04406,Up,9.04E-10
+CC,GAPDH,GO:0065010,extracellular membrane-bounded organelle,11,P04406,Up,9.04E-10
+CC,GAPDH,GO:0005615,extracellular space,11,P04406,Up,1.38E-07
+CC,GAPDH,GO:0031982,vesicle,12,P04406,Up,2.55E-08
+CC,GAPDH,GO:0005576,extracellular region,13,P04406,Up,1.81E-09
+CC,HEXB,GO:0035578,azurophil granule lumen,5,P07686,Up,2.34E-09
+CC,HEXB,GO:0042582,azurophil granule,5,P07686,Up,3.14E-08
+CC,HEXB,GO:0005766,primary lysosome,5,P07686,Up,3.14E-08
+CC,HEXB,GO:0005775,vacuolar lumen,5,P07686,Up,5.53E-08
+CC,HEXB,GO:0034774,secretory granule lumen,6,P07686,Up,2.38E-08
+CC,HEXB,GO:0060205,cytoplasmic vesicle lumen,6,P07686,Up,2.52E-08
+CC,HEXB,GO:0031983,vesicle lumen,6,P07686,Up,2.61E-08
+CC,HEXB,GO:0030141,secretory granule,7,P07686,Up,3.36E-07
+CC,HEXB,GO:0000323,lytic vacuole,5,P07686,Up,5.59E-05
+CC,HEXB,GO:0005764,lysosome,5,P07686,Up,5.59E-05
+CC,HEXB,GO:0099503,secretory vesicle,7,P07686,Up,1.10E-06
+CC,HEXB,GO:0005773,vacuole,5,P07686,Up,1.02E-04
+CC,HEXB,GO:0070062,extracellular exosome,11,P07686,Up,8.08E-10
+CC,HEXB,GO:1903561,extracellular vesicle,11,P07686,Up,8.95E-10
+CC,HEXB,GO:0043230,extracellular organelle,11,P07686,Up,9.04E-10
+CC,HEXB,GO:0065010,extracellular membrane-bounded organelle,11,P07686,Up,9.04E-10
+CC,HEXB,GO:0005615,extracellular space,11,P07686,Up,1.38E-07
+CC,HEXB,GO:0031982,vesicle,12,P07686,Up,2.55E-08
+CC,HEXB,GO:0005576,extracellular region,13,P07686,Up,1.81E-09
+CC,HEXB,GO:0031410,cytoplasmic vesicle,7,P07686,Up,3.07E-04
+CC,HEXB,GO:0097708,intracellular vesicle,7,P07686,Up,3.09E-04
+CC,TPI1,GO:0070062,extracellular exosome,11,P60174,Up,8.08E-10
+CC,TPI1,GO:1903561,extracellular vesicle,11,P60174,Up,8.95E-10
+CC,TPI1,GO:0043230,extracellular organelle,11,P60174,Up,9.04E-10
+CC,TPI1,GO:0065010,extracellular membrane-bounded organelle,11,P60174,Up,9.04E-10
+CC,TPI1,GO:0005615,extracellular space,11,P60174,Up,1.38E-07
+CC,TPI1,GO:0031982,vesicle,12,P60174,Up,2.55E-08
+CC,TPI1,GO:0005576,extracellular region,13,P60174,Up,1.81E-09
+CC,HMHA1,GO:0035578,azurophil granule lumen,5,Q92619,Up,2.34E-09
+CC,HMHA1,GO:0042582,azurophil granule,5,Q92619,Up,3.14E-08
+CC,HMHA1,GO:0005766,primary lysosome,5,Q92619,Up,3.14E-08
+CC,HMHA1,GO:0005775,vacuolar lumen,5,Q92619,Up,5.53E-08
+CC,HMHA1,GO:0034774,secretory granule lumen,6,Q92619,Up,2.38E-08
+CC,HMHA1,GO:0060205,cytoplasmic vesicle lumen,6,Q92619,Up,2.52E-08
+CC,HMHA1,GO:0031983,vesicle lumen,6,Q92619,Up,2.61E-08
+CC,HMHA1,GO:0030141,secretory granule,7,Q92619,Up,3.36E-07
+CC,HMHA1,GO:0000323,lytic vacuole,5,Q92619,Up,5.59E-05
+CC,HMHA1,GO:0005764,lysosome,5,Q92619,Up,5.59E-05
+CC,HMHA1,GO:0099503,secretory vesicle,7,Q92619,Up,1.10E-06
+CC,HMHA1,GO:0005773,vacuole,5,Q92619,Up,1.02E-04
+CC,HMHA1,GO:0031982,vesicle,12,Q92619,Up,2.55E-08
+CC,HMHA1,GO:0005576,extracellular region,13,Q92619,Up,1.81E-09
+CC,HMHA1,GO:0031410,cytoplasmic vesicle,7,Q92619,Up,3.07E-04
+CC,HMHA1,GO:0097708,intracellular vesicle,7,Q92619,Up,3.09E-04
+CC,IDH1,GO:0034774,secretory granule lumen,6,O75874,Down,2.38E-08
+CC,IDH1,GO:0060205,cytoplasmic vesicle lumen,6,O75874,Down,2.52E-08
+CC,IDH1,GO:0031983,vesicle lumen,6,O75874,Down,2.61E-08
+CC,IDH1,GO:0030141,secretory granule,7,O75874,Down,3.36E-07
+CC,IDH1,GO:0099503,secretory vesicle,7,O75874,Down,1.10E-06
+CC,IDH1,GO:0070062,extracellular exosome,11,O75874,Down,8.08E-10
+CC,IDH1,GO:1903561,extracellular vesicle,11,O75874,Down,8.95E-10
+CC,IDH1,GO:0043230,extracellular organelle,11,O75874,Down,9.04E-10
+CC,IDH1,GO:0065010,extracellular membrane-bounded organelle,11,O75874,Down,9.04E-10
+CC,IDH1,GO:0005615,extracellular space,11,O75874,Down,1.38E-07
+CC,IDH1,GO:0031982,vesicle,12,O75874,Down,2.55E-08
+CC,IDH1,GO:0005576,extracellular region,13,O75874,Down,1.81E-09
+CC,IDH1,GO:0031410,cytoplasmic vesicle,7,O75874,Down,3.07E-04
+CC,IDH1,GO:0097708,intracellular vesicle,7,O75874,Down,3.09E-04
+CC,CTSC,GO:0035578,azurophil granule lumen,5,P53634,Down,2.34E-09
+CC,CTSC,GO:0042582,azurophil granule,5,P53634,Down,3.14E-08
+CC,CTSC,GO:0005766,primary lysosome,5,P53634,Down,3.14E-08
+CC,CTSC,GO:0005775,vacuolar lumen,5,P53634,Down,5.53E-08
+CC,CTSC,GO:0034774,secretory granule lumen,6,P53634,Down,2.38E-08
+CC,CTSC,GO:0060205,cytoplasmic vesicle lumen,6,P53634,Down,2.52E-08
+CC,CTSC,GO:0031983,vesicle lumen,6,P53634,Down,2.61E-08
+CC,CTSC,GO:0030141,secretory granule,7,P53634,Down,3.36E-07
+CC,CTSC,GO:0000323,lytic vacuole,5,P53634,Down,5.59E-05
+CC,CTSC,GO:0005764,lysosome,5,P53634,Down,5.59E-05
+CC,CTSC,GO:0099503,secretory vesicle,7,P53634,Down,1.10E-06
+CC,CTSC,GO:0005773,vacuole,5,P53634,Down,1.02E-04
+CC,CTSC,GO:0070062,extracellular exosome,11,P53634,Down,8.08E-10
+CC,CTSC,GO:1903561,extracellular vesicle,11,P53634,Down,8.95E-10
+CC,CTSC,GO:0043230,extracellular organelle,11,P53634,Down,9.04E-10
+CC,CTSC,GO:0065010,extracellular membrane-bounded organelle,11,P53634,Down,9.04E-10
+CC,CTSC,GO:0005615,extracellular space,11,P53634,Down,1.38E-07
+CC,CTSC,GO:0031982,vesicle,12,P53634,Down,2.55E-08
+CC,CTSC,GO:0005576,extracellular region,13,P53634,Down,1.81E-09
+CC,CTSC,GO:0031410,cytoplasmic vesicle,7,P53634,Down,3.07E-04
+CC,CTSC,GO:0097708,intracellular vesicle,7,P53634,Down,3.09E-04
+CC,SLC27A2,GO:0030141,secretory granule,7,O14975,Down,3.36E-07
+CC,SLC27A2,GO:0099503,secretory vesicle,7,O14975,Down,1.10E-06
+CC,SLC27A2,GO:0070062,extracellular exosome,11,O14975,Down,8.08E-10
+CC,SLC27A2,GO:1903561,extracellular vesicle,11,O14975,Down,8.95E-10
+CC,SLC27A2,GO:0043230,extracellular organelle,11,O14975,Down,9.04E-10
+CC,SLC27A2,GO:0065010,extracellular membrane-bounded organelle,11,O14975,Down,9.04E-10
+CC,SLC27A2,GO:0005615,extracellular space,11,O14975,Down,1.38E-07
+CC,SLC27A2,GO:0031982,vesicle,12,O14975,Down,2.55E-08
+CC,SLC27A2,GO:0005576,extracellular region,13,O14975,Down,1.81E-09
+CC,SLC27A2,GO:0031410,cytoplasmic vesicle,7,O14975,Down,3.07E-04
+CC,SLC27A2,GO:0097708,intracellular vesicle,7,O14975,Down,3.09E-04
+CC,KRT19,GO:0070062,extracellular exosome,11,P08727,Up,8.08E-10
+CC,KRT19,GO:1903561,extracellular vesicle,11,P08727,Up,8.95E-10
+CC,KRT19,GO:0043230,extracellular organelle,11,P08727,Up,9.04E-10
+CC,KRT19,GO:0065010,extracellular membrane-bounded organelle,11,P08727,Up,9.04E-10
+CC,KRT19,GO:0005615,extracellular space,11,P08727,Up,1.38E-07
+CC,KRT19,GO:0031982,vesicle,12,P08727,Up,2.55E-08
+CC,KRT19,GO:0005576,extracellular region,13,P08727,Up,1.81E-09

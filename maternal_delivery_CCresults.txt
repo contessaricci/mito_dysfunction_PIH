@@ -1,0 +1,48 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20210224)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.5228828 Released 2021-08-18
+Analyzed List:	upload_1 (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO cellular component complete	Homo sapiens - REFLIST (20595)	upload_1 (36)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+specific granule membrane (GO:0035579)	91	6	.16	+	37.72	1.61E-08	1.59E-05
+platelet alpha granule lumen (GO:0031093)	67	3	.12	+	25.62	2.46E-04	2.58E-02
+specific granule (GO:0042581)	160	7	.28	+	25.03	1.38E-08	2.73E-05
+platelet alpha granule (GO:0031091)	91	3	.16	+	18.86	5.86E-04	4.02E-02
+ruffle membrane (GO:0032587)	99	3	.17	+	17.34	7.44E-04	4.35E-02
+leading edge membrane (GO:0031256)	182	4	.32	+	12.57	3.01E-04	2.72E-02
+secretory granule membrane (GO:0030667)	311	6	.54	+	11.04	1.66E-05	4.71E-03
+cell leading edge (GO:0031252)	428	7	.75	+	9.36	8.68E-06	2.88E-03
+membrane microdomain (GO:0098857)	340	5	.59	+	8.41	3.13E-04	2.70E-02
+membrane raft (GO:0045121)	340	5	.59	+	8.41	3.13E-04	2.59E-02
+cell projection membrane (GO:0031253)	350	5	.61	+	8.17	3.57E-04	2.83E-02
+glutamatergic synapse (GO:0098978)	350	5	.61	+	8.17	3.57E-04	2.73E-02
+presynapse (GO:0098793)	512	6	.89	+	6.70	2.50E-04	2.48E-02
+secretory granule (GO:0030141)	869	10	1.52	+	6.58	1.73E-06	8.61E-04
+secretory vesicle (GO:0099503)	1037	11	1.81	+	6.07	1.03E-06	6.79E-04
+plasma membrane region (GO:0098590)	1258	11	2.20	+	5.00	6.57E-06	2.61E-03
+cell surface (GO:0009986)	931	8	1.63	+	4.92	1.73E-04	2.03E-02
+somatodendritic compartment (GO:0036477)	872	7	1.52	+	4.59	7.03E-04	4.24E-02
+neuron projection (GO:0043005)	1397	11	2.44	+	4.50	1.76E-05	4.37E-03
+synapse (GO:0045202)	1347	10	2.35	+	4.25	7.68E-05	1.39E-02
+cytoplasmic vesicle membrane (GO:0030659)	1172	8	2.05	+	3.91	8.05E-04	4.57E-02
+vesicle membrane (GO:0012506)	1192	8	2.08	+	3.84	8.98E-04	4.96E-02
+integral component of plasma membrane (GO:0005887)	1653	10	2.89	+	3.46	4.08E-04	3.01E-02
+plasma membrane bounded cell projection (GO:0120025)	2257	13	3.95	+	3.30	6.71E-05	1.33E-02
+intrinsic component of plasma membrane (GO:0031226)	1738	10	3.04	+	3.29	6.07E-04	4.02E-02
+cell junction (GO:0030054)	2103	12	3.68	+	3.26	1.56E-04	2.21E-02
+cell projection (GO:0042995)	2362	13	4.13	+	3.15	1.07E-04	1.78E-02
+cytoplasmic vesicle (GO:0031410)	2455	13	4.29	+	3.03	1.59E-04	2.11E-02
+intracellular vesicle (GO:0097708)	2458	13	4.30	+	3.03	1.61E-04	2.00E-02
+bounding membrane of organelle (GO:0098588)	2103	11	3.68	+	2.99	6.75E-04	4.19E-02
+organelle membrane (GO:0031090)	3641	15	6.36	+	2.36	6.72E-04	4.31E-02
+vesicle (GO:0031982)	3932	16	6.87	+	2.33	4.56E-04	3.24E-02
+cytosol (GO:0005829)	5394	21	9.43	+	2.23	6.42E-05	1.42E-02
+plasma membrane (GO:0005886)	5867	21	10.26	+	2.05	2.62E-04	2.48E-02
+cell periphery (GO:0071944)	6364	22	11.12	+	1.98	2.05E-04	2.26E-02
+cytoplasm (GO:0005737)	11940	32	20.87	+	1.53	1.18E-04	1.80E-02

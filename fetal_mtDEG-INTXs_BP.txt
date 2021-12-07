@@ -1,0 +1,22 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20210224)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.5228828 Released 2021-08-18
+Analyzed List:	upload_1 (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Homo sapiens - REFLIST (20595)	upload_1 (13)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+carbohydrate catabolic process (GO:0016052)	104	5	.07	+	76.16	4.70E-09	7.38E-05
+monosaccharide metabolic process (GO:0005996)	165	4	.10	+	38.41	2.95E-06	9.26E-03
+cellular carbohydrate metabolic process (GO:0044262)	167	4	.11	+	37.95	3.09E-06	8.09E-03
+carbohydrate metabolic process (GO:0005975)	469	6	.30	+	20.27	2.17E-07	1.71E-03
+monocarboxylic acid metabolic process (GO:0032787)	491	6	.31	+	19.36	2.84E-07	1.49E-03
+carboxylic acid metabolic process (GO:0019752)	808	6	.51	+	11.76	5.04E-06	1.13E-02
+oxoacid metabolic process (GO:0043436)	832	6	.53	+	11.42	5.96E-06	1.17E-02
+organic acid metabolic process (GO:0006082)	854	6	.54	+	11.13	6.92E-06	1.21E-02
+small molecule metabolic process (GO:0044281)	1547	8	.98	+	8.19	9.42E-07	3.70E-03
+organic substance catabolic process (GO:1901575)	1587	7	1.00	+	6.99	1.85E-05	2.91E-02
